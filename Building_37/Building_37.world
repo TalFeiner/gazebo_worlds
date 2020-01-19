@@ -21,8 +21,12 @@
       <region>
         <name>region1</name>
         <volume>
+        <!--
           <min>-18.5 19 0</min>
           <max>-17.5 21 1</max>
+          -->
+          <min>-18.88 20 1</min>
+          <max>-18.5 20.3 1.25</max>
         </volume>
       </region>
 
@@ -96,10 +100,38 @@
           </geometry>
           <material>
             <script>
-              <name>Gazebo/Red</name>
+              <name>Gazebo/Wood </name>
             </script>
           </material>
         </visual>
+
+             <collision name="wall1_collision_bot">
+          <pose>1.12 0.3 1.125 0 0 0</pose> 
+          <geometry>
+            <box>
+              <size>0.01 0.09 0.36</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="wall1_visual_bot">
+          <pose>1.12 0.25 1.125 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.09 0.36</size>
+            </box>
+          </geometry>
+          <material>
+                      <script>
+            <uri>model://elevator_shaft/materials/scripts</uri>
+            <uri>model://elevator_shaft/materials/textures</uri>
+            <name>Up_down/Diffuse</name>
+          </script>
+          </material>
+        </visual>
+
+        
+
+        
   
         <!-- wall2_collision is the wall to the left of the door, when
              facing the door -->
@@ -120,7 +152,7 @@
           </geometry>
           <material>
             <script>
-              <name>Gazebo/Red</name>
+              <name>Gazebo/Wood </name>
             </script>
           </material>
         </visual>
@@ -136,6 +168,20 @@
           </geometry>
         </collision>
         <visual name="visual">
+        <material>
+          <script>
+            <uri>model://elevator_door/materials/scripts</uri>
+            <uri>model://elevator_door/materials/textures</uri>
+            <name>Elevator_door/Picture</name>
+          </script>
+          <shader type='pixel'>
+            <normal_map>__default__</normal_map>
+          </shader>
+          <ambient>1 1 1 1</ambient>
+          <diffuse>1 1 1 1</diffuse>
+          <specular>0 0 0 1</specular>
+          <emissive>0 0 0 1</emissive>
+        </material>
           <geometry>
             <box>
               <size>0.08 1.0 2.25</size>
