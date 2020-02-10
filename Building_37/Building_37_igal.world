@@ -130,6 +130,7 @@
   
         <!-- wall1_collision is the wall to the right of the door, when
              facing the door -->
+             <!--
         <collision name="wall1_collision">
           <pose>1.0745 0.5725 1.125 0 0 0</pose> 
           <geometry>
@@ -175,13 +176,15 @@
           </script>
           </material>
         </visual>
-
+        -->
         
 
         
   
         <!-- wall2_collision is the wall to the left of the door, when
              facing the door -->
+
+             <!--
         <collision name="wall2_collision">
           <pose>1.0745 -1.0625 1.125 0 0 0</pose> 
           <geometry>
@@ -202,7 +205,7 @@
               <name>Gazebo/Wood </name>
             </script>
           </material>
-        </visual>
+        </visual>-->
       </link>
   
       <link name="door">
@@ -245,11 +248,11 @@
           <limit>
             <lower>0</lower>
             <upper>1</upper>
-            <effort>10</effort>
+            <effort>0.525</effort> <!--10-->
           </limit>
 
           <dynamics>
-            <damping>2</damping>
+            <damping>1</damping>
           </dynamics>
         </axis>
       </joint>
@@ -283,7 +286,7 @@
         <floor_height>2.675</floor_height>
 
         <!-- Time the elevator door will stay open in seconds -->
-        <door_wait_time>10</door_wait_time>
+        <door_wait_time>8</door_wait_time>
 
         <!-- This topic is used to control the elevator -->
         <topic>~/elevator</topic>
@@ -453,6 +456,36 @@
       </visual>
       <pose frame=''>0 -1.875 0 0 0 -1.5708</pose>
     </link>
+
+  <pose frame=''> 0.02 -1.1 1.15 0 -0 0</pose>
+  <link name="wall_left_elevetor_0_floor">
+   <!-- wall2_collision is the wall to the left of the door, when
+             facing the door -->
+        <collision name="wall2_collision">
+          <!--<pose frame=''>-18.75 20 0 0 -0 0</pose>--> 
+          <geometry>
+            <box>
+              <size>0.05 0.2 2.65</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="wall2_visual">
+          <pose frame=''>0.02 -1.1 1.12 0 -0 0</pose> 
+          <geometry>
+            <box>
+              <size>0.1 0.2 2.65</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Wood </name>
+            </script>
+          </material>
+        </visual>
+  </link>
+
+
+
     <link name='Wall_2'>
       <collision name='Wall_2_Collision'>
         <geometry>
@@ -477,6 +510,58 @@
       </visual>
       <pose frame=''>0 1.875 0 0 0 -1.5708</pose>
     </link>
+
+    <link name="right_elevator_wall_floor_0">
+    <collision name="wall1_collision">
+          <pose>0.0 0.6 1.125 0 0 0</pose> 
+          <geometry>
+            <box>
+              <size>0.1 1.15 2.85</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="wall1_visual">
+          <pose>0.0 0.6 1.125 0 0 0</pose> 
+          <geometry>
+            <box>
+              <size>0.1 1.15 2.85</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Wood </name>
+            </script>
+          </material>
+        </visual>
+
+             <collision name="wall1_collision_bot">
+          <pose>0.1 0.3 1.125 0 0 0</pose> 
+          <geometry>
+            <box>
+              <size>0.01 0.09 0.36</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="wall1_visual_bot">
+          <pose>0.1 0.25 1.125 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.09 0.36</size>
+            </box>
+          </geometry>
+          <material>
+                      <script>
+            <uri>model://elevator_shaft/materials/scripts</uri>
+            <uri>model://elevator_shaft/materials/textures</uri>
+            <name>Up_down/Diffuse</name>
+          </script>
+          </material>
+        </visual>
+
+    </link>
+
+
+
     <static>1</static>
   </model>
     
@@ -1620,6 +1705,59 @@
       </visual>
       <pose frame=''>-4.375 13.125 2.5 0 0 -1.5708</pose>
     </link>
+
+    <pose frame=''> -4.35 9.85 3.7 0 -0 0</pose>
+    <link name="right_elevator_wall_floor_1">
+    <collision name="wall1_collision">
+          <pose>-4.32 9.6 3.7 0 -0 0</pose> 
+          <geometry>
+            <box>
+              <size>0.1 1.15 2.85</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="wall1_visual">
+          <pose>-4.35 9.6 3.7 0 -0 0</pose> 
+          <geometry>
+            <box>
+              <size>0.1 1.15 2.85</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Wood </name>
+            </script>
+          </material>
+        </visual>
+
+             <collision name="wall1_collision_bot">
+          <pose>-4.3 9.2 3.7 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.09 0.36</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="wall1_visual_bot">
+          <pose>-4.3 9.2 3.7 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.01 0.09 0.36</size>
+            </box>
+          </geometry>
+          <material>
+                      <script>
+            <uri>model://elevator_shaft/materials/scripts</uri>
+            <uri>model://elevator_shaft/materials/textures</uri>
+            <name>Up_down/Diffuse</name>
+          </script>
+          </material>
+        </visual>
+
+    </link>
+
+
+
     <link name='Wall_34'>
       <collision name='Wall_34_Collision'>
         <geometry>
@@ -1678,6 +1816,35 @@
       </visual>
       <pose frame=''>6 16 2.5 0 -0 0</pose>
     </link>
+      <pose frame=''> -4.32 7.95 3.7 0 -0 0</pose>
+  <link name="wall_left_elevetor_1_floor">
+   <!-- wall2_collision is the wall to the left of the door, when
+             facing the door -->
+        <collision name="wall2_collision">
+          <!--<pose frame=''>-18.75 20 0 0 -0 0</pose>--> 
+          <geometry>
+            <box>
+              <size>0.05 0.2 2.65</size>
+            </box>
+          </geometry>
+        </collision>
+        <visual name="wall2_visual">
+          <pose frame=''> -4.32 7.95 3.7 0 -0 0</pose>
+          <geometry>
+            <box>
+              <size>0.1 0.2 2.65</size>
+            </box>
+          </geometry>
+          <material>
+            <script>
+              <name>Gazebo/Wood </name>
+            </script>
+          </material>
+        </visual>
+  </link>
+
+
+
     <link name='Wall_37'>
       <collision name='Wall_37_Collision'>
         <geometry>
@@ -1697,11 +1864,13 @@
             <size>20.85 0.15 2.5</size>
           </box>
         </geometry>
-       <material>
-            <script>
-              <name>Gazebo/Wood </name>
-            </script>
-          </material>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
       </visual>
       <pose frame=''>-4.375 -2.7795 2.5 0 0 -1.5708</pose>
     </link>
@@ -1717,11 +1886,13 @@
             <size>9.12745 0.15 2.5</size>
           </box>
         </geometry>
-      <material>
-            <script>
-              <name>Gazebo/Wood </name>
-            </script>
-          </material>
+        <material>
+          <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Wood</name>
+          </script>
+          <ambient>1 1 1 1</ambient>
+        </material>
       </visual>
       <collision name='Wall_38_Collision_0'>
         <geometry>

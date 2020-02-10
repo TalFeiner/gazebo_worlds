@@ -245,11 +245,11 @@
           <limit>
             <lower>0</lower>
             <upper>1</upper>
-            <effort>10</effort>
+            <effort>0.525</effort> <!--10-->
           </limit>
 
           <dynamics>
-            <damping>2</damping>
+            <damping>1</damping>
           </dynamics>
         </axis>
       </joint>
@@ -445,13 +445,11 @@
             <size>1.4 0.15 2.5</size>
           </box>
         </geometry>
-        <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Grey</name>
-          </script>
-          <ambient>1 1 1 1</ambient>
-        </material>
+       <material>
+            <script>
+              <name>Gazebo/Wood </name>
+            </script>
+          </material>
       </visual>
       <pose frame=''>0 -1.875 0 0 0 -1.5708</pose>
     </link>
@@ -472,12 +470,10 @@
           </box>
         </geometry>
         <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Grey</name>
-          </script>
-          <ambient>1 1 1 1</ambient>
-        </material>
+            <script>
+              <name>Gazebo/Wood </name>
+            </script>
+          </material>
       </visual>
       <pose frame=''>0 1.875 0 0 0 -1.5708</pose>
     </link>
@@ -1616,13 +1612,11 @@
             <size>5.9 0.15 2.5</size>
           </box>
         </geometry>
-        <material>
-          <script>
-            <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Grey</name>
-          </script>
-          <ambient>1 1 1 1</ambient>
-        </material>
+       <material>
+            <script>
+              <name>Gazebo/Wood </name>
+            </script>
+          </material>
       </visual>
       <pose frame=''>-4.375 13.125 2.5 0 0 -1.5708</pose>
     </link>
@@ -1706,7 +1700,7 @@
         <material>
           <script>
             <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Grey</name>
+            <name>Gazebo/Wood</name>
           </script>
           <ambient>1 1 1 1</ambient>
         </material>
@@ -1728,7 +1722,7 @@
         <material>
           <script>
             <uri>file://media/materials/scripts/gazebo.material</uri>
-            <name>Gazebo/Grey</name>
+            <name>Gazebo/Wood</name>
           </script>
           <ambient>1 1 1 1</ambient>
         </material>
