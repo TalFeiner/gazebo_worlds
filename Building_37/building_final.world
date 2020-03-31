@@ -11464,36 +11464,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='walkway_metal_straight'>
-        <pose frame=''>-26.4466 -3.57768 -0.145734 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-26.4466 -3.57768 -0.145734 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='walkway_metal_straight_0'>
-        <pose frame=''>-26.4388 -2.09402 -0.146275 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-26.4388 -2.09402 -0.146275 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='walkway_metal_straight_1'>
-        <pose frame=''>-26.444 -1.12498 -0.145686 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>-26.444 -1.12498 -0.145686 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
+     
       <light name='sun'>
         <pose frame=''>0 0 10 0 -0 0</pose>
       </light>
@@ -23577,120 +23548,8 @@
       <allow_auto_disable>1</allow_auto_disable>
       <pose frame=''>-20.634 3.78992 0 0 -0 0</pose>
     </model>
-    <model name='walkway_metal_straight'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <pose frame=''>0 0.762 0.076075 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>1.524 1.524 0.15215</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.001</scale>
-              <uri>model://walkway_metal_straight/meshes/mesh.obj</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>-26.4466 -3.57768 0 0 -0 0</pose>
-    </model>
-    <model name='walkway_metal_straight_0'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <pose frame=''>0 0.762 0.076075 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>1.524 1.524 0.15215</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.001</scale>
-              <uri>model://walkway_metal_straight/meshes/mesh.obj</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>-26.4388 -2.09402 0 0 -0 0</pose>
-    </model>
-    <model name='walkway_metal_straight_1'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <pose frame=''>0 0.762 0.076075 0 -0 0</pose>
-          <geometry>
-            <box>
-              <size>1.524 1.524 0.15215</size>
-            </box>
-          </geometry>
-          <max_contacts>10</max_contacts>
-          <surface>
-            <contact>
-              <ode/>
-            </contact>
-            <bounce/>
-            <friction>
-              <torsional>
-                <ode/>
-              </torsional>
-              <ode/>
-            </friction>
-          </surface>
-        </collision>
-        <visual name='visual'>
-          <geometry>
-            <mesh>
-              <scale>0.001 0.001 0.001</scale>
-              <uri>model://walkway_metal_straight/meshes/mesh.obj</uri>
-            </mesh>
-          </geometry>
-        </visual>
-        <self_collide>0</self_collide>
-        <enable_wind>0</enable_wind>
-        <kinematic>0</kinematic>
-      </link>
-      <pose frame=''>-26.444 -1.12498 0 0 -0 0</pose>
-    </model>
+
+    
     <model name='recycle_bin_red'>
       <link name='link_4'>
         <pose frame=''>-0.65 -0.6 0 0 -0 0</pose>
