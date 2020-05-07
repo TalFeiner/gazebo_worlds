@@ -1,0 +1,13 @@
+material Up_down_first_floor/Diffuse
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture up_down_blue_first_floor.jpg
+      }
+    }
+  }
+}

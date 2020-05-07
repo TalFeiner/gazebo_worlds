@@ -620,9 +620,9 @@
           </geometry>
           <material>
             <script>
-              <uri>model://elevator_shaft/materials/scripts</uri>
-              <uri>model://elevator_shaft/materials/textures</uri>
-              <name>Up_down/Diffuse</name>
+              <uri>model://elevator_shaft_first_floor/materials/scripts</uri>
+              <uri>model://elevator_shaft_first_floor/materials/textures</uri>
+              <name>Up_down_first_floor/Diffuse</name>
             </script>
           </material>
         </visual>
@@ -1860,9 +1860,9 @@
           </geometry>
           <material>
             <script>
-              <uri>model://elevator_shaft/materials/scripts</uri>
-              <uri>model://elevator_shaft/materials/textures</uri>
-              <name>Up_down/Diffuse</name>
+              <uri>model://elevator_shaft_second_floor/materials/scripts</uri>
+              <uri>model://elevator_shaft_second_floor/materials/textures</uri>
+              <name>Up_down_second_floor/Diffuse</name>
             </script>
           </material>
         </visual>
