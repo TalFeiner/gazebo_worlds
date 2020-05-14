@@ -1,6 +1,13 @@
 <?xml version="1.0" ?>
 <sdf version='1.5'>
   <world name='default'>
+     <gui>
+    <camera name="user_camera">
+      <pose>-14.99 17.5 7.43 0 0.639 2.497</pose>
+    </camera>
+  </gui>
+
+
     <light name='sun' type='directional'>
       <cast_shadows>1</cast_shadows>
       <pose frame=''>0 0 10 0 -0 0</pose>
