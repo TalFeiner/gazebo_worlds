@@ -77,7 +77,7 @@
           <max>-18.59 20.27 1.06</max>
         </volume>
       </region>
-      <region>
+      <!--<region>
         <name>region1_inside</name>
         <volume>
           <min>-19.7 19.1 0</min>
@@ -90,7 +90,7 @@
           <min>-19.7 19.1 2.58</min>
           <max>-19.1 19.8 2.8</max>
         </volume>
-      </region>
+      </region>-->
       <region>
         <name>region2</name>
         <volume>
@@ -112,7 +112,7 @@
         <topic>~/elevator</topic>
         <msg_data>1</msg_data>
       </event>
-      <event>
+      <!--<event>
         <name>region2_1_event</name>
         <type>occupied</type>
         <region>region1_inside</region>
@@ -125,10 +125,10 @@
         <region>region2_inside</region>
         <topic>~/elevator</topic>
         <msg_data>0</msg_data>
-      </event>
+      </event>-->
     </plugin>
     <model name='elevator'>
-      <pose frame=''>-20 20 0.001 0 -0 0</pose>
+      <pose frame=''>-20 20 0.0025 0 -0 0</pose>
       <link name='link'>
         <inertial>
           <mass>800</mass>
@@ -144,7 +144,7 @@
         <collision name='floor_collision'>
           <geometry>
             <box>
-              <size>2.25 2.25 0.001</size>
+              <size>2.25 2.25 0.005</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -164,7 +164,7 @@
         <visual name='floor_visual'>
           <geometry>
             <box>
-              <size>2.25 2.25 0.001</size>
+              <size>2.25 2.25 0.005</size>
             </box>
           </geometry>
         </visual>
@@ -292,10 +292,10 @@
           <limit>
             <lower>0</lower>
             <upper>10</upper>
-            <effort>100000</effort>
+            <effort>10000</effort>
           </limit>
           <dynamics>
-            <damping>50</damping>
+            <damping>8000</damping>
             <spring_reference>0</spring_reference>
             <spring_stiffness>0</spring_stiffness>
           </dynamics>
@@ -315,7 +315,7 @@
         <lift_joint>elevator::lift</lift_joint>
         <door_joint>elevator::door</door_joint>
         <floor_height>2.675</floor_height>
-        <door_wait_time>8</door_wait_time>
+        <door_wait_time>20</door_wait_time>
         <topic>~/elevator</topic>
       </plugin>
     </model>
@@ -411,7 +411,7 @@
           </geometry>
         </visual>
         <collision name='floor0_collision'>
-          <pose frame=''>1.19 0 0.001 0 -0 0</pose>
+          <pose frame=''>1.19 0 0.0005 0 -0 0</pose>
           <geometry>
             <box>
               <size>0.12 2.5 0.001</size>
@@ -432,7 +432,7 @@
           </surface>
         </collision>
         <visual name='floor0_visual'>
-          <pose frame=''>1.19 0 0.001 0 -0 0</pose>
+          <pose frame=''>1.19 0 0.0005 0 -0 0</pose>
           <geometry>
             <box>
               <size>0.12 2.5 0.001</size>
@@ -443,7 +443,7 @@
           <pose frame=''>1.19 0 2.525 0 -0 0</pose>
           <geometry>
             <box>
-              <size>0.12 2.5 0.15</size>
+              <size>0.12 2.5 0.149</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -464,7 +464,7 @@
           <pose frame=''>1.19 0 2.525 0 -0 0</pose>
           <geometry>
             <box>
-              <size>0.12 2.5 0.15</size>
+              <size>0.12 2.5 0.149</size>
             </box>
           </geometry>
         </visual>
@@ -473,16 +473,16 @@
         <kinematic>0</kinematic>
       </link>
     </model>
-    <model name='elevator_2.5'>
+    <model name='elevator_2.675'>
       <pose frame=''>-18.75 20 0 0 -0 0</pose>
       <link name='Wall_0'>
         <collision name='Wall_0_Collision'>
           <geometry>
             <box>
-              <size>1.4 0.15 2.5</size>
+              <size>1.4 0.15 2.675</size>
             </box>
           </geometry>
-          <pose frame=''>0 0 1.25 0 -0 0</pose>
+          <pose frame=''>0 0 1.3375 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -498,13 +498,13 @@
           </surface>
         </collision>
         <visual name='Wall_0_Visual'>
-          <pose frame=''>0 0 1.25 0 -0 0</pose>
+          <pose frame=''>0 0 1.3375 0 -0 0</pose>
           <meta>
             <layer>0</layer>
           </meta>
           <geometry>
             <box>
-              <size>1.4 0.15 2.5</size>
+              <size>1.4 0.15 2.675</size>
             </box>
           </geometry>
           <material>
@@ -524,10 +524,10 @@
         <collision name='Wall_2_Collision'>
           <geometry>
             <box>
-              <size>1.4 0.15 2.5</size>
+              <size>1.4 0.15 2.675</size>
             </box>
           </geometry>
-          <pose frame=''>0 0 1.25 0 -0 0</pose>
+          <pose frame=''>0 0 1.3375 0 -0 0</pose>
           <max_contacts>10</max_contacts>
           <surface>
             <contact>
@@ -543,10 +543,10 @@
           </surface>
         </collision>
         <visual name='Wall_2_Visual'>
-          <pose frame=''>0 0 1.25 0 -0 0</pose>
+          <pose frame=''>0 0 1.3375 0 -0 0</pose>
           <geometry>
             <box>
-              <size>1.4 0.15 2.5</size>
+              <size>1.4 0.15 2.675</size>
             </box>
           </geometry>
           <material>
