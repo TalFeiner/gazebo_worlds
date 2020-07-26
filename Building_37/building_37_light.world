@@ -128,7 +128,7 @@
       </event>-->
     </plugin>
     <model name='elevator'>
-      <pose frame=''>-20 20 0.0025 0 -0 0</pose>
+      <pose frame=''>-20 20 0.01 0 -0 0</pose>
       <link name='link'>
         <inertial>
           <mass>800</mass>
@@ -144,7 +144,7 @@
         <collision name='floor_collision'>
           <geometry>
             <box>
-              <size>2.25 2.25 0.005</size>
+              <size>2.25 2.25 0.02</size>
             </box>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -164,7 +164,7 @@
         <visual name='floor_visual'>
           <geometry>
             <box>
-              <size>2.25 2.25 0.005</size>
+              <size>2.25 2.25 0.02</size>
             </box>
           </geometry>
         </visual>
@@ -295,7 +295,7 @@
             <effort>100000</effort>
           </limit>
           <dynamics>
-            <damping>8000</damping>
+            <damping>50</damping>
             <spring_reference>0</spring_reference>
             <spring_stiffness>0</spring_stiffness>
           </dynamics>
@@ -314,7 +314,7 @@
       <plugin name='elevator_plugin' filename='libElevatorPlugin.so'>
         <lift_joint>elevator::lift</lift_joint>
         <door_joint>elevator::door</door_joint>
-        <floor_height>2.678</floor_height>
+        <floor_height>2.664</floor_height>
         <door_wait_time>20</door_wait_time>
         <topic>~/elevator</topic>
       </plugin>
