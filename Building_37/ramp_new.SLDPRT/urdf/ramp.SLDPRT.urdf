@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="ramp.SLDPRT">
+  <link
+    name="ramp_new.SLDPRT">
+    <inertial>
+      <origin
+        xyz="0.54997 0.16614 0.00631059999999999"
+        rpy="0 0 0" />
+      <mass
+        value="5.1598" />
+      <inertia
+        ixx="0.071469"
+        ixy="-0.00013965"
+        ixz="-1.1196E-05"
+        iyy="0.50754"
+        iyz="-0.0013514"
+        izz="0.5788" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ramp_new.SLDPRT/meshes/ramp_new.SLDPRT.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+        <texture
+          filename="package://ramp_new.SLDPRT/textures/" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://ramp_new.SLDPRT/meshes/ramp_new.SLDPRT.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

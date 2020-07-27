@@ -208,6 +208,57 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
+
+	       <link name='ramp_new.SLDPRT'>
+        <pose frame=''>1.125 0.05  0 0 -0 -1.578</pose>
+        <inertial>
+          <pose frame=''>0.54997 0.16614 0.006311 0 -0 0</pose>
+          <mass>5.1598</mass>
+          <inertia>
+            <ixx>0.071469</ixx>
+            <ixy>-0.00013965</ixy>
+            <ixz>-1.1196e-05</ixz>
+            <iyy>0.50754</iyy>
+            <iyz>-0.0013514</iyz>
+            <izz>0.5788</izz>
+          </inertia>
+        </inertial>
+        <collision name='ramp_new.SLDPRT_collision'>
+          <pose frame=''>0 0 0 1.5708 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://ramp_new.SLDPRT/meshes/ramp_new.SLDPRT.STL</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='ramp_new.SLDPRT_visual'>
+          <pose frame=''>0 0 0 1.5708 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>model://ramp_new.SLDPRT/meshes/ramp_new.SLDPRT.STL</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+
       <link name='door'>
         <pose frame=''>1.0745 -0.5 1.125 0 -0 0</pose>
         <collision name='collision'>
