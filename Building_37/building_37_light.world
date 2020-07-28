@@ -98,6 +98,36 @@
           <max>-18.23 20.24 3.65</max>
         </volume>
       </region>
+
+	<region>
+        <name>region_door1</name>
+        <volume>
+          <min>-18.86 18.8 2.6</min>
+          <max>-19.0 20.0 5.0</max>
+        </volume>
+      </region>
+	<region>
+        <name>region_door0</name>
+        <volume>
+          <min>-18.86 18.8 0.1</min>
+          <max>-19.0 20.0 2.4</max>
+        </volume>
+      </region>
+	<event>
+        <name>region_door1_event</name>
+        <type>occupied</type>
+        <region>region_door1</region>
+        <topic>~/elevator</topic>
+        <msg_data>1</msg_data>
+      </event>
+	<event>
+        <name>region_door0_event</name>
+        <type>occupied</type>
+        <region>region_door0</region>
+        <topic>~/elevator</topic>
+        <msg_data>0</msg_data>
+      </event>
+
       <event>
         <name>region1_event</name>
         <type>occupied</type>
@@ -126,6 +156,7 @@
         <topic>~/elevator</topic>
         <msg_data>0</msg_data>
       </event>-->
+	
     </plugin>
     <model name='elevator'>
       <pose frame=''>-20 20 0.01 0 -0 0</pose>
@@ -209,11 +240,11 @@
         <kinematic>0</kinematic>
       </link>
 
-	       <link name='ramp_new.SLDPRT'>
+	 <link name='ramp_new.SLDPRT'>
         <pose frame=''>1.125 0.05  0 0 -0 -1.578</pose>
         <inertial>
           <pose frame=''>0.54997 0.16614 0.006311 0 -0 0</pose>
-          <mass>5.1598</mass>
+          <mass>500.1598</mass>
           <inertia>
             <ixx>0.071469</ixx>
             <ixy>-0.00013965</ixy>
