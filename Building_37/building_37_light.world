@@ -7882,8 +7882,13 @@
     </link>
   </model>
 
-  
-   
+  <!--Big Can-->
+   <include>
+      <uri>model://coke_can_slim_big</uri>
+      <pose>-16.883 23.097 3.355002 0 0 0</pose>
+     <!-- <pose>-16.883 23.248 3.355002 0 0 0</pose>-->
+      <static>False</static>
+    </include>
    
 
     <!-- A table -->
@@ -7891,7 +7896,7 @@
       <uri>model://kitchen_table</uri>
       <name>table1</name>
       <!--<pose>1.35 -0.8 -0.34 0 0 0</pose>-->
-      <pose>-18.05 23.82 2.62 0 0 -1.5655 </pose>
+      <pose>-18.05 23.82 2.55 0 0 -1.5655 </pose>
       
     </include>
     <!-- Objects on the table -->
@@ -7908,6 +7913,7 @@
     <include>
       <uri>model://coke_can_slim</uri>
       <pose>-16.883 23.097 3.355002 0 0 0</pose>
+      <!--<pose>-16.883 24.097 3.355002 0 0 0</pose>-->
       <static>False</static>
     </include>
     <include>
