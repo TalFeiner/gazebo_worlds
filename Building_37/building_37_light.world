@@ -7978,6 +7978,7 @@
       <uri>model://kitchen_table</uri>
       <name>table1</name>
       <!--<pose>1.35 -0.8 -0.34 0 0 0</pose>-->
+      <!--<pose>-18.05 23.82 2.62 0 0 -1.5655 </pose>-->
       <pose>-18.05 23.82 2.55 0 0 -1.5655 </pose>
       
     </include>
