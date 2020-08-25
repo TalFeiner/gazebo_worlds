@@ -378,7 +378,7 @@ gazebo_model_path="${gazebo_worlds}/Building_37/models"
             <effort>100000</effort>
           </limit>
           <dynamics>
-            <damping>50</damping>
+            <damping>10</damping><!--50 20-->
             <spring_reference>0</spring_reference>
             <spring_stiffness>0</spring_stiffness>
           </dynamics>
@@ -398,7 +398,7 @@ gazebo_model_path="${gazebo_worlds}/Building_37/models"
         <lift_joint>elevator::lift</lift_joint>
         <door_joint>elevator::door</door_joint>
         <floor_height>2.664</floor_height>
-        <door_wait_time>40</door_wait_time>
+        <door_wait_time>60</door_wait_time>
         <topic>~/elevator</topic>
       </plugin>
     </model>
@@ -10299,15 +10299,19 @@ gazebo_model_path="${gazebo_worlds}/Building_37/models"
       <pose>-12.702 17.224 2.58 0 0 3.125</pose>
       <static>True</static>
     </include>
+
+
+     <include>
+     <name>first_floor_human_1</name>
+      <uri>model://human_male_4</uri>
+      <pose>-17.38 11.19 0 0 0 2.86</pose>
+      <static>True</static>
+    </include>
+
+
     
     
-    <gazebo reference="second_floor_human_1">
-    <visual>
-    <meta>
-    <layer>1</layer>
-    </meta>
-    </visual>
-    </gazebo>
+
 
     <!--invisible table to put can on-->
     <!--
@@ -10991,6 +10995,80 @@ gazebo_model_path="${gazebo_worlds}/Building_37/models"
       <static>True</static>
        
     </include>
+
+
+   <model name='my_cup_lift_new_first_floor'>
+    <!--<pose>-10.6 23.1 3.342002 0 0 0</pose>-->
+    <pose>-26.3 15.45 0.599 0 0 0</pose>
+      <link name='cup_lift_new'>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose frame=''>0 -0 0.033681 0 -0 0</pose>
+          <mass>0.20745</mass>
+          <inertia>
+            <ixx>0.00035434</ixx>
+            <ixy>4.5295e-09</ixy>
+            <ixz>-7.3331e-09</ixz>
+            <iyy>0.00035428</iyy>
+            <iyz>3.7927e-09</iyz>
+            <izz>0.00025076</izz>
+          </inertia>
+        </inertial>
+        <collision name='cup_lift_new_collision_first_floor'>
+          <pose frame=''>0 0 0 1.5708 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tal/catkin_ws/src/cup_lift_new/meshes/cup_lift_new.STL</uri>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <visual name='cup_lift_new_visual_first_floor'>
+          <pose frame=''>0 0 0 1.5708 -0 0</pose>
+          <geometry>
+            <mesh>
+              <scale>1 1 1</scale>
+              <uri>/home/tal/catkin_ws/src/cup_lift_new/meshes/cup_lift_new.STL</uri>
+            </mesh>
+          </geometry>
+                    <material>
+       
+
+	   <script>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+            <name>Gazebo/Green </name>
+          </script>
+        </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+        <gravity>1</gravity>
+      </link>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+    </model>
+
+     <include>
+      <uri>model://kitchen_table</uri>
+      <name>table_place_first</name>
+      <!--<pose>1.35 -0.8 -0.34 0 0 0</pose>-->
+     <!-- <pose>-18.05 18.82 2.55 0 0 -1.5655 </pose>-->
+       <pose>-25.31 14.529 -0.069 0 0 -1.5655 </pose>
+      
+    </include>
+
 
   </world>
 </sdf>
