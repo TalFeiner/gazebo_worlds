@@ -46,9 +46,13 @@ Each world has a different number of objects, a different order
 adapted to different scenarios according to the needs of the lab.
  
  
- 1. building_37_sim_1
+ 1. building_37_sim_1.world
  
+  A. floor 2
  ![Before ](https://github.com/bguplp/gazebo_worlds/blob/master/Building_37/building_37_sim_1.png)
+ 
+  B. floor 1 
+ ![Before ](https://github.com/bguplp/gazebo_worlds/blob/master/Building_37/building_37_sim_1_floor_1.png)
  
  
   
