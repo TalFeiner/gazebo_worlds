@@ -39,8 +39,17 @@ $ gazebo NAME_OF_WORLD.world
 ```
 
  
-    
+## Examples of worlds in the package
+In this package there a diffrent verssions of a same building.
+The difference between the worlds is the weight of the world, i.e. 
+Each world has a different number of objects, a different order
+adapted to different scenarios according to the needs of the lab.
  
+ 
+ 1. building_37_sim_1
+ 
+ ![Before ](https://github.com/bguplp/gazebo_worlds/blob/master/Building_37/building_37_sim_1.png)
+![After ]
  
  
   
