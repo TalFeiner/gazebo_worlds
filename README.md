@@ -26,8 +26,7 @@ There two options to do it:
 * Recomended :
   copy to terminal:
   ```bash
-  $ cp *  ~/catkin_ws/src/gazebo_worlds/Building_37/models ~/.gazebo/models/
-  
+  $ cp -a  ~/catkin_ws/src/gazebo_worlds/Building_37/models/. ~/.gazebo/models/
   ```
 * Manualiy
 
