@@ -161,7 +161,7 @@ gazebo_model_path="${gazebo_worlds}/Building_37/models"
         <topic>~/elevator</topic>
         <msg_data>0</msg_data>
 
-      </event>-->
+      </event>-->i
     </plugin>
     <model name='elevator'>
       <pose frame=''>-20 20 0.01 0 -0 0</pose>
