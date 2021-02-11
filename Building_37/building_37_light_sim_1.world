@@ -8208,7 +8208,7 @@ gazebo_model_path="${gazebo_worlds}/Building_37/models"
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/tal/catkin_ws/src/armadillo/armadillo2_gazebo/worlds/cup_new_full/meshes/cup_new_full.STL</uri>
+              <uri>model://cup_new/meshes/cup_new.STL</uri>
             </mesh>
           </geometry>
           
@@ -8232,7 +8232,7 @@ gazebo_model_path="${gazebo_worlds}/Building_37/models"
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/tal/catkin_ws/src/armadillo/armadillo2_gazebo/worlds/cup_new_full/meshes/cup_new_full.STL</uri>
+              <uri>model://cup_new/meshes/cup_new.STL</uri>
             </mesh>
           </geometry>
            <material>
@@ -8281,7 +8281,7 @@ gazebo_model_path="${gazebo_worlds}/Building_37/models"
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/tal/catkin_ws/src/cup_lift_new/meshes/cup_lift_new.STL</uri>
+              <uri>model://cup_new/meshes/cup_new.STL</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -8303,7 +8303,7 @@ gazebo_model_path="${gazebo_worlds}/Building_37/models"
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/tal/catkin_ws/src/cup_lift_new/meshes/cup_lift_new.STL</uri>
+              <uri>model://cup_new/meshes/cup_new.STL</uri>
             </mesh>
           </geometry>
                     <material>
@@ -8464,7 +8464,7 @@ gazebo_model_path="${gazebo_worlds}/Building_37/models"
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/tal/catkin_ws/src/cup_lift_new/meshes/cup_lift_new.STL</uri>
+              <uri>model://cup_new/meshes/cup_new.STL</uri>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -8486,7 +8486,7 @@ gazebo_model_path="${gazebo_worlds}/Building_37/models"
           <geometry>
             <mesh>
               <scale>1 1 1</scale>
-              <uri>/home/tal/catkin_ws/src/cup_lift_new/meshes/cup_lift_new.STL</uri>
+              <uri>model://cup_new/meshes/cup_new.STL</uri>
             </mesh>
           </geometry>
                     <material>
